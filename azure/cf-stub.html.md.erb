@@ -117,6 +117,19 @@ networks:
   <tr>
     <td><pre><code>
 properties:
+  template_only:
+    azure:
+      environment: AZURE_ENVIRONMENT
+      azure_storage_account_name: AZURE_STORAGE_ACCOUNT_NAME
+      azure_storage_access_key: AZURE_STORAGE_ACCESS_KEY
+      </code></pre></td>
+    <td>Replace <code>AZURE_ENVIRONMENT</code> with the Azure environment you are using. AzureCloud, AzureChinaCloud or AzureUSGovernment.
+    <br/><br/>
+    Replace <code>AZURE_STORAGE_ACCOUNT_NAME</code> and <code>AZURE_STORAGE_ACCOUNT_NAME</code> with credentials to allow Cloud Controller to manage containers in the Azure storage account you have prepared for this deployment.
+    </td>
+  </tr>
+  <tr>
+    <td><pre><code>
   system_domain: SYSTEM_DOMAIN
   system_domain_organization: SYSTEM_DOMAIN_ORGANIZATION
     </code></pre></td>
